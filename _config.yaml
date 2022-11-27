@@ -3,5 +3,3 @@ plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 title: "Earthformer: Exploring Space-Time Transformers for Earth System Forecasting"
 description: "NeurIPS 2022"
-markdown: kramdown
-use_math: true
