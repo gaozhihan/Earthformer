@@ -1,5 +1,5 @@
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
-title: "Earthformer: Exploring Space-Time Transformers for Earth System Forecasting"
+title: "Earthformer: Exploring Space-Time Transformers for\nEarth System Forecasting"
 description: "NeurIPS 2022"

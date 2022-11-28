@@ -1,5 +1,11 @@
 # Earthformer: Exploring Space-Time Transformers for Earth System Forecasting
 
+[Zhihan Gao](https://scholar.google.com/citations?user=P6ACUAUAAAAJ&hl=zh-CN)$^{2\star}$, [Xingjian Shi](https://github.com/sxjscience)$^{1\dagger}$, [Hao Wang](http://www.wanghao.in/)$^3$, [Yi Zhu](https://bryanyzhu.github.io/)$^1$, [Yuyang Wang](https://scholar.google.com/citations?user=IKUm624AAAAJ&hl=en)$^1$, [Mu Li](https://github.com/mli)$^1$, [Dit-Yan Yeung](https://scholar.google.com/citations?user=nEsOOx8AAAAJ&hl=en)$^2$
+
+$^1$Amazon Web Services, $^2$Hong Kong University of Science and Technology, $^3$Rutgers University
+
+$^\star$Work done while being an intern at Amazon Web Services. $^\dagger$Contact person.
+
 ## Abstract
 Conventionally, Earth system (e.g., weather and climate) forecasting relies on numerical simulation with complex physical models and hence is both expensive in computation and demanding on domain expertise. 
 With the explosive growth of spatiotemporal Earth observation data in the past decade, data-driven models that apply Deep Learning (DL) are demonstrating impressive potential for various Earth system forecasting tasks.
