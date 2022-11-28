@@ -27,7 +27,7 @@ Based on these observations, the model predicts the *K*-step-ahead future.
 We propose Earthformer, which is a hierarchical Transformer encoder-decoder based on Cuboid Attention. The input observations are encoded as a hierarchy of hidden states and then decoded to the prediction target.
 
 ### Architecture
-As illustrated in the following figure, the input sequence has length *T* and the target sequence has length *K*. "x *D*" means to stack $D$ cuboid attention blocks with residual connection. "*M* x" means to have *M* layers of hierarchies.
+As illustrated in the following figure, the input sequence has length *T* and the target sequence has length *K*. "x *D*" means to stack *D* cuboid attention blocks with residual connection. "*M* x" means to have *M* layers of hierarchies.
 
 ![enc_dec](./figures/hierarchical-encoder-decoder-v1.png)
 
