@@ -6,6 +6,10 @@
 
 <sup>*</sup>Work done while being an intern at Amazon Web Services. <sup>**</sup>Contact person.
 
+[Paper accepted to NeurIPS2022](https://openreview.net/forum?id=lzZstLVGVGW)
+
+[Code](https://github.com/amazon-science/earth-forecasting-transformer)
+
 [Poster](https://deep-earth.s3.amazonaws.com/papers/earthformer_neurips2022/Earthformer_poster_NeurIPS22.pdf)
 
 ## Abstract
@@ -52,6 +56,47 @@ When stacking multiple cuboid attention layers, each layer will be coupled with 
 
 ## Experiments
 TBA
+
+### MovingMNIST
+We follow [Unsupervised Learning of Video Representations using LSTMs (ICML2015)](https://arxiv.org/abs/1502.04681) to use the [public MovingMNIST dataset](https://www.cs.toronto.edu/~nitish/unsupervised_video/).
+
+### *N*-body MNIST
+We extend MovingMNIST to a more challenging chaotic *N*-body MNIST by adding long-range and non-linear gravitational interactions among moving digits: 
+
+![gravity_law](./figures/gravity_law.png)
+
+**Access to our *N*-body MNIST dataset**:
+1. [Download](https://github.com/amazon-science/earth-forecasting-transformer/blob/main/scripts/datasets/nbody/download_nbody_paper.py) the *N*-body MNIST dataset used in our paper from AWS S3.
+2. Generate your custom *N*-body MNIST dataset using our [script](https://github.com/amazon-science/earth-forecasting-transformer/blob/main/scripts/datasets/nbody/generate_nbody_dataset.py) and following the [instructions](https://github.com/amazon-science/earth-forecasting-transformer/blob/main/scripts/datasets/nbody/README.md).
+
+The following figure illustrates the chaos in *N*-body MNIST: the effect of a slight disturbance on the initial velocities is much more significant on *N*-body MNIST than on MovingMNIST. 
+The top half are two MovingMNIST sequences, where their initial conditions only slightly differ in the the initial velocities. 
+The bottom half are two *N*-body MNIST sequences.
+ *N*-body MNIST sequence 1 has exactly the same initial condition as MovingMNIST sequence 1. 
+ *N*-body MNIST sequence 2 has exactly the same initial condition as MovingMNIST sequence 2. 
+ The final positions of digits in MovingMNIST after 20 steps evolution only slightly differ from each other, while the differences are much more significant in the final frames of *N*-body MNIST sequences.
+
+ ![vis_chaos](./figures/vis_chaos.png)
+
+Earthformer is able to more accurately predict the position of the digits with the help of global vectors.
+On the contrary, none of the baseline algorithms that achieved solid performance on MovingMNIST gives the correct and precise position of the digit "0" in the last frame.
+
+![vis_nbody20k_test0](./figures/vis_nbody20k_test0.gif)
+
+### SEVIR
+Checkout the public leaderboard of SEVIR on [Papers With Code](https://paperswithcode.com/sota):
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/earthformer-exploring-space-time-transformers/weather-forecasting-on-sevir)](https://paperswithcode.com/sota/weather-forecasting-on-sevir?p=earthformer-exploring-space-time-transformers)
+
+### ICAR-ENSO
+Dataset available at [TIANCHI](https://tianchi.aliyun.com/dataset/dataDetail?dataId=98942).
+
+### EarthNet2021
+Checkout the public leaderboard of EarthNet2021 on [Papers With Code](https://paperswithcode.com/sota):
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/earthformer-exploring-space-time-transformers/earth-surface-forecasting-on-earthnet2021-iid)](https://paperswithcode.com/sota/earth-surface-forecasting-on-earthnet2021-iid?p=earthformer-exploring-space-time-transformers)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/earthformer-exploring-space-time-transformers/earth-surface-forecasting-on-earthnet2021-ood)](https://paperswithcode.com/sota/earth-surface-forecasting-on-earthnet2021-ood?p=earthformer-exploring-space-time-transformers)
 
 ## BibTeX
 ```
