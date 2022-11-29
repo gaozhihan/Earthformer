@@ -10,6 +10,8 @@ $^\star$Work done while being an intern at Amazon Web Services. $^\dagger$Contac
 
 [Code](https://github.com/amazon-science/earth-forecasting-transformer)
 
+[Poster](https://deep-earth.s3.amazonaws.com/papers/earthformer_neurips2022/Earthformer_poster_NeurIPS22.pdf)
+
 ## Abstract
 Conventionally, Earth system (e.g., weather and climate) forecasting relies on numerical simulation with complex physical models and hence is both expensive in computation and demanding on domain expertise. 
 With the explosive growth of spatiotemporal Earth observation data in the past decade, data-driven models that apply Deep Learning (DL) are demonstrating impressive potential for various Earth system forecasting tasks.
