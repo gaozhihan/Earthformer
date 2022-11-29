@@ -55,7 +55,6 @@ When stacking multiple cuboid attention layers, each layer will be coupled with 
 ![cuboid_table](./figures/cuboid_table.png)
 
 ## Experiments
-TBA
 
 ### MovingMNIST
 We follow [Unsupervised Learning of Video Representations using LSTMs (ICML2015)](https://arxiv.org/abs/1502.04681) to use the [public MovingMNIST dataset](https://www.cs.toronto.edu/~nitish/unsupervised_video/).
@@ -84,6 +83,9 @@ On the contrary, none of the baseline algorithms that achieved solid performance
 ![vis_nbody20k_test0](./figures/vis_nbody20k_test0.gif)
 
 ### SEVIR
+[Storm EVent ImageRy (SEVIR) benchmark](https://sevir.mit.edu/) supports scientific research on multiple meteorological applications including precipitation nowcasting, synthetic radar generation, front detection, etc. 
+We adopt SEVIR for benchmarking precipitation nowcasting, i.e., to predict the future VIL up to 60 minutes (12 frames) given 65 minutes context VIL (13 frames).
+
 Checkout the public leaderboard of SEVIR on [Papers With Code](https://paperswithcode.com/sota):
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/earthformer-exploring-space-time-transformers/weather-forecasting-on-sevir)](https://paperswithcode.com/sota/weather-forecasting-on-sevir?p=earthformer-exploring-space-time-transformers)
@@ -92,7 +94,11 @@ Checkout the public leaderboard of SEVIR on [Papers With Code](https://paperswit
 Dataset available at [TIANCHI](https://tianchi.aliyun.com/dataset/dataDetail?dataId=98942).
 
 ### EarthNet2021
-Checkout the public leaderboard of EarthNet2021 on [Papers With Code](https://paperswithcode.com/sota):
+[EarthNet2021](https://www.earthnet.tech/en21/ch-task/) is a dataset and challenge for the task of Earth surface forecasting.
+
+![earthnet2021_example](./figures/EarthNet2021_example.png)
+
+Checkout the [official leaderboard](https://www.earthnet.tech/en21/ch-leaderboard/) of EarthNet2021 and the leaderboard publicly available on [Papers With Code](https://paperswithcode.com/sota):
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/earthformer-exploring-space-time-transformers/earth-surface-forecasting-on-earthnet2021-iid)](https://paperswithcode.com/sota/earth-surface-forecasting-on-earthnet2021-iid?p=earthformer-exploring-space-time-transformers)
 
